@@ -49,6 +49,7 @@ jobs:
         cd $(ls -d */|head -n 1)
         cd js/src
         autoconf2.13
+        sed -i 's/mozjs-$MOZILLA_SYMBOLVERSION/mozjs/g' old-configure.in
         mkdir _build
         cd _build
         ../configure --disable-jemalloc --with-system-zlib \
