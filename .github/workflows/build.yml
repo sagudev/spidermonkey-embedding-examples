@@ -2,7 +2,7 @@ name: Spidermonkey
 
 on:
   push:
-    branches: [ wip-esr91 ]
+    branches: [ ww ]
   pull_request:
     branches: [ wip-esr91 ]
   schedule: 
